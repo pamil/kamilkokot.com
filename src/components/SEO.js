@@ -9,7 +9,7 @@ function SEO({ description, lang, meta, keywords, title }) {
       query={detailsQuery}
       render={data => {
         const titleTemplate =
-          title === undefined
+          title === undefined || title === null || title === ''
             ? data.site.siteMetadata.title
             : `%s | ${data.site.siteMetadata.title}`;
         const metaTitle = title || data.site.siteMetadata.title;
