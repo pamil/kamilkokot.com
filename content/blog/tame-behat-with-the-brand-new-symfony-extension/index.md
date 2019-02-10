@@ -4,7 +4,7 @@ date: "2019-02-11"
 spoiler: "Do you use Behat with Symfony? Here's why you should consider switching to FriendsOfBehat's SymfonyExtension."
 ---
 
-Over two years after the first stable release of this [Friends of Behat]'s [Symfony Extension], I'm happy to announce
+Over two years after the first release of this [Friends of Behat]'s [Symfony Extension], I'm happy to announce
 the availability of the second major version and write more about it.
 
 It is the already battle-tested solution with [Sylius][sylius-fobse-pr] on 1300+ scenarios containing 14000+ steps, getting 
