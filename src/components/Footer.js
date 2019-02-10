@@ -39,19 +39,20 @@ function Footer() {
               rel="noopener noreferrer"
             >
               Email
-            </a>{' '}
-            &bull;{' '}
-            <a
-              href={`https://github.com/${githubRepository}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Source code
-            </a>{' '}
-            &bull;{' '}
-            <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
-              RSS
             </a>
+            <div style={{ float: 'right' }}>
+              <a
+                href={`https://github.com/${githubRepository}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source code
+              </a>{' '}
+              &bull;{' '}
+              <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
+                RSS
+              </a>
+            </div>
           </footer>
         );
       }}
