@@ -20,3 +20,11 @@
   float: left;
   min-width: 100%;
 }
+
+:not(pre) > code[class*='language-'] {
+  background-color: hsla(0, 0%, 92%, 1);
+  color: hsla(0, 0%, 0%, 0.9);
+  border-radius: 0.3em;
+  padding: 0.15em 0.25em 0.05em;
+  /* white-space: normal; */
+}
