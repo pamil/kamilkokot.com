@@ -174,7 +174,7 @@ default:
         FriendsOfBehat\SymfonyExtension: ~
 ```
 
-If you want to learn more about the default settings, [take a look at the documentation][fobse-docs-configuration].
+[Learn more about the default settings][fobse-docs-configuration].
 
 ### Mink integration
 
