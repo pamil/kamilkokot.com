@@ -64,12 +64,12 @@ const footerQuery = graphql`
     site {
       siteMetadata {
         email
+        githubRepository
         social {
           twitter
           github
           linkedin
         }
-        githubRepository
       }
     }
   }

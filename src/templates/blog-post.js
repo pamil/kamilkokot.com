@@ -36,11 +36,8 @@ class BlogPostTemplate extends React.Component {
           <BlogPostMetadata
             date={post.frontmatter.date}
             timeToRead={post.timeToRead}
-            disqusShortname={disqusShortname}
             identifier={post.id}
-            editUrl={`https://github.com/pamil/kamilkokot.com/edit/master/content/blog${
-              this.props.pageContext.slug
-            }index.md`}
+            slug={this.props.pageContext.slug}
           />
         </p>
         <div

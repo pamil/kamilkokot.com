@@ -33,7 +33,6 @@ class BlogIndex extends React.Component {
               <BlogPostMetadata
                 date={node.frontmatter.date}
                 timeToRead={node.timeToRead}
-                disqusShortname={disqusShortname}
                 identifier={node.id}
               />
               <p
