@@ -29,7 +29,7 @@ class BlogPostTemplate extends React.Component {
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: rhythm(1.5),
           }}
         />
         <Bio />
@@ -41,6 +41,7 @@ class BlogPostTemplate extends React.Component {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            margin: 0,
           }}
         >
           <li>

@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://kamilkokot.com`,
     social: {
       twitter: `pamilme`,
+      github: `pamil`,
     },
   },
   plugins: [
