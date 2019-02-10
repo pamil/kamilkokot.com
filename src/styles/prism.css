@@ -1,0 +1,22 @@
+.gatsby-highlight-code-line {
+  background-color: hsla(0, 15%, 30%, 1);
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #ffa7c4;
+}
+
+.gatsby-highlight {
+  margin-bottom: 1.75rem;
+  border-radius: 10px;
+  background: #011627;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*='language-'] {
+  float: left;
+  min-width: 100%;
+}

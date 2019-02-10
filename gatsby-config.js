@@ -39,6 +39,12 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-embed-snippet`,
+            options: {
+              directory: `${__dirname}/content/snippets`,
+            },
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -75,5 +81,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-catch-links',
   ],
 };
