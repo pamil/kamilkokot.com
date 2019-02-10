@@ -20,7 +20,7 @@ with stakeholders and writing down business features instead of figuring out low
 - Zero-configuration for most Symfony 3 and 4 based apps
 - Unified application configuration and dotenv file handling (similar to the PHPUnit one)
 - Integration with Mink, available out of the box
-- Simplified usage, going down from using three interconnected Behat extensions to one
+- Simplified usage, reduced the number of extensions from three to one
 - Improved developer experience with more descriptive exceptions and more predictable overall behaviour
 
 The paragraphs down below explain the reasoning behind design decisions made in the new extension. 
