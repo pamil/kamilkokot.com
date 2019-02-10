@@ -8,6 +8,7 @@ export default function BlogPostMetadata({
   timeToRead,
   disqusShortname,
   identifier,
+  editUrl = null,
 }) {
   return (
     <small>
@@ -20,6 +21,20 @@ export default function BlogPostMetadata({
       >
         0 comments
       </CommentCount>
+      {editUrl && (
+        <span>
+          {' '}
+          &bull;{' '}
+          <a
+            href={editUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none', boxShadow: 'none' }}
+          >
+            Edit on GitHub
+          </a>
+        </span>
+      )}
     </small>
   );
 }
