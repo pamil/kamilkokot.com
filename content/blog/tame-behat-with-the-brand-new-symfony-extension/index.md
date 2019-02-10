@@ -30,17 +30,17 @@ if you do not want to miss it.
 
 ### Support for Symfony's autowiring and autoconfiguration
 
-Every time I introduced someone new to Behat and Symfony, the number of modifications needed to implement even simple steps
-was an issue. 
+Ever since I have started working with Behat and Symfony on more complex projects, the number of configuration changes 
+needed to implement even simple steps was an issue and it was going worse and worse.
 
 Whether it was `Behat/Symfony2Extension` or `FriendsOfBehat/SymfonyExtension`, injecting a dependency into
-a context required too much hassle and pulled us away from the domain being modelled.
+a context required too much hassle and pulled me away from the domain being modelled.
 
-It is a common use case to have a context which implements a step like `Given I am a logged in customer` that is used in
-every suite which does web acceptance testing. 
+The common use case is to have a context which implements a step like `Given I am a logged in customer` that is used in
+every suite which does web acceptance testing.
 
 Let's assume we need two Behat suites using the same context depending on `kernel` service and compare the required 
-configuration for every Behat - Symfony extension out there.
+configuration for every Symfony extension for Behat out there.
 
 #### Behat/Symfony2Extension
 
@@ -57,13 +57,16 @@ second_suite:
             kernel: '@kernel' # highlight-line
 ```
 
+This snippet does not look that bad, mostly because of its size. With every new dependency and new suite it gets longer.
+Adding a new dependency to a context requires changing the configuration of every suite.
+
+#### FriendsOfBehat/SymfonyExtension v1
+
 Finding all places where a context is used and modifying its dependencies is a boring work, which I wanted to avoid in 
 the first version of <abbr title="Friends Of Behat">FOB</abbr>'s SymfonyExtension. 
 
-It was possible by registering contexts as services, but it fundamentally changes the way you use Behat. 
+It was possible by registering contexts as services, which fundamentally changes the way you use them in Behat. 
 This is why I decided to write my own extension to integrate Behat with Symfony.
-
-#### FriendsOfBehat/SymfonyExtension v1
 
 ```yaml
 # behat.yml
@@ -85,22 +88,23 @@ services:
         tags: ['fob.context_service'] # highlight-line
 ```
 
-This gets rid of the duplicated context configuration, but introduces more boilerplate and own conventions which are hard
-to get at the first look:
-
-- `contexts_services` instead of default `contexts` has not introduced any measurable benefits, it was supposed to prevent 
-  conflicts with the basic configuration for ones not using context services in every suite
+The duplication is removed, but it has introduced more boilerplate code and own conventions which are hard to get at first:
   
-- the `__symfony__` prefix when referencing service from Symfony application container prevented autocomplete in IDEs
+- `__symfony__` prefix when referencing service from Symfony application container prevented autocomplete in IDEs
   from working correctly
   
-- the `fob.context_service` tag was required by the internal infrastructure to be able to use a service as a context, but
+- `fob.context_service` tag was required by the internal infrastructure to be able to use a service as a context, but
   it caused bugs quite often as it was so easy to forget it
   
-The duplication has been reduced, but the whole process of registering contexts manually was far from pleasant. The newest
-version tackles it by incorporating autowiring and autoconfiguration as first-class mechanisms and removes the boilerplate.
+- `contexts_services` instead of default `contexts` has not introduced any measurable benefit, it was supposed to prevent 
+  conflicts with the default configuration if one does not use context services in every suite
+  
+The whole process of registering contexts manually was far from pleasant.
 
 #### FriendsOfBehat/SymfonyExtension v2
+
+The newest version reduces required boilerplate code by incorporating autowiring and autoconfiguration as first-class 
+mechanisms and sticking to the already known conventions.
 
 ```yaml
 # behat.yml
@@ -132,8 +136,8 @@ services:
 ```
 
 The following file is loaded only in the test environment. Your production and development environments are not
-affected with any performance loss. However, if you prefer not to rely on autowiring, you can define the service on your
-own - remember to make it public though:
+affected with any performance loss. However, if you prefer not to rely on autowiring, you can define the context as a 
+service on your own - remember to make it public though:
 
 ```yaml
 # config/services_test.yaml
@@ -235,7 +239,7 @@ or [the documenation about Mink integration][fobse-docs-mink].
 
 ### What's next?
 
-With all those new, shiny features mentioned above, there are still a few ideas in my mind that would be great to have:
+With all those new, shiny features mentioned above, there are still a few ideas in my mind that would be great to see in the future:
 
 - [providing Mink as a service](https://github.com/FriendsOfBehat/SymfonyExtension/issues/61)
 - [autowiring and autoconfiguration for steps definitions](https://github.com/FriendsOfBehat/SymfonyExtension/issues/62)
