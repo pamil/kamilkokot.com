@@ -35,7 +35,7 @@ Every time I introduced someone new to Behat and Symfony, the number of modifica
 was an issue. 
 
 Whether it was `Behat/Symfony2Extension` or `FriendsOfBehat/SymfonyExtension`, injecting a dependency into
-a context required too much hassle and pulled us away from the core activities of Behaviour Driven-Design.
+a context required too much hassle and pulled us away from the domain being modelled.
 
 It is a common use case to have a context which implements a step like `Given I am a logged in customer` that is used in
 every suite which does web acceptance testing. 
