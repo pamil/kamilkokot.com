@@ -36,7 +36,9 @@ class BlogIndex extends React.Component {
                 disqusShortname={disqusShortname}
                 identifier={node.id}
               />
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <p
+                dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }}
+              />
             </div>
           );
         })}
@@ -61,13 +63,13 @@ export const pageQuery = graphql`
         node {
           id
           timeToRead
-          excerpt
           fields {
             slug
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            spoiler
           }
         }
       }
