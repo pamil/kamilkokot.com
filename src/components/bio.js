@@ -14,7 +14,6 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(0.5),
             }}
           >
             <Image

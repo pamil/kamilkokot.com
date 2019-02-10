@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import { DiscussionEmbed } from 'disqus-react';
 
 import Bio from '../components/bio';
 import Layout from '../components/layout';
@@ -10,6 +11,11 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = this.props.data.site.siteMetadata.title;
+    const disqusShortname = this.props.data.site.siteMetadata.disqusShortname;
+    const disqusConfig = {
+      identifier: post.id,
+      title: post.frontmatter.title,
+    };
     const { previous, next } = this.props.pageContext;
 
     return (
@@ -59,6 +65,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </Layout>
     );
   }
@@ -72,6 +79,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        disqusShortname
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

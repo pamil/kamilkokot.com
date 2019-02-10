@@ -11,11 +11,7 @@ function Footer() {
       render={data => {
         const { social } = data.site.siteMetadata;
         return (
-          <footer
-            style={{
-              paddingTop: rhythm(0.5),
-            }}
-          >
+          <footer>
             <a
               href={`https://twitter.com/${social.twitter}`}
               target="_blank"

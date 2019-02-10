@@ -1,13 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `kamilkokot.com`,
+    title: `Kamil Kokot`,
     author: `Kamil Kokot`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: ``,
     siteUrl: `https://kamilkokot.com`,
     social: {
       twitter: `pamilme`,
       github: `pamil`,
     },
+    disqusShortname: `kamilkokotcom`,
   },
   plugins: [
     {
@@ -64,8 +65,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `kamilkokot.com`,
-        short_name: `kamilkokot.com`,
+        name: `Kamil Kokot`,
+        short_name: `Kamil Kokot`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
