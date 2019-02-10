@@ -10,6 +10,7 @@ module.exports = {
       github: `pamil`,
       linkedin: `kamilkokot`,
     },
+    githubRepository: `pamil/kamilkokot.com`,
     disqusShortname: `kamilkokotcom`,
   },
   plugins: [

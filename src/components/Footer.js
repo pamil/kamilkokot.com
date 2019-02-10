@@ -6,7 +6,7 @@ function Footer() {
     <StaticQuery
       query={footerQuery}
       render={data => {
-        const { email, social } = data.site.siteMetadata;
+        const { email, social, githubRepository } = data.site.siteMetadata;
         return (
           <footer>
             <a
@@ -41,6 +41,14 @@ function Footer() {
               Email
             </a>{' '}
             &bull;{' '}
+            <a
+              href={`https://github.com/${githubRepository}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source code
+            </a>{' '}
+            &bull;{' '}
             <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
               RSS
             </a>
@@ -61,6 +69,7 @@ const footerQuery = graphql`
           github
           linkedin
         }
+        githubRepository
       }
     }
   }
