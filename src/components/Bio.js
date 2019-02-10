@@ -21,6 +21,7 @@ function Bio() {
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
+                marginTop: rhythm(1 / 4),
                 marginBottom: 0,
                 minWidth: 50,
                 borderRadius: `100%`,
@@ -42,7 +43,9 @@ function Bio() {
                 <strong>{author}</strong>
               </Link>
               . My goal is to make software testing as effortless as possible so
-              that you can develop with confidence.
+              that you can develop with confidence. I&nbsp;work on{' '}
+              <a href="https://sylius.com">Sylius</a> and{' '}
+              <a href="https://github.com/FriendsOfBehat">FriendsOfBehat</a>.
             </p>
           </div>
         );

@@ -27,7 +27,7 @@ The paragraphs down below explain the reasoning behind design decisions made in 
 If you want to try it first, [dive straight into the documentation][fobse-docs]. 
 
 I am working on an entry-level tutorial for SymfonyExtension v2, make sure to [follow me on Twitter][twitter-follow] 
-if you don't want to miss it.
+if you do not want to miss it.
 
 ### Support for Symfony's autowiring and autoconfiguration
 
@@ -253,6 +253,7 @@ I made a GitHub project which is used as a [roadmap][fobse-roadmap] for this pro
 [fobse-docs]: https://github.com/FriendsOfBehat/SymfonyExtension#documentation
 [fobse-roadmap]: https://github.com/FriendsOfBehat/SymfonyExtension/projects/1
 [Friends Of Behat]: https://github.com/FriendsOfBehat
+[Mink]: http://mink.behat.org/en/latest/
 [monofony-fobse-pr]: https://github.com/Monofony/SymfonyStarter/pull/103
 [PHPUnit]: https://phpunit.de/
 [sylius-fobse-pr]: https://github.com/Sylius/Sylius/pull/10102

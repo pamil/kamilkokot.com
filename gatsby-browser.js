@@ -8,3 +8,7 @@ import './src/styles/prism.css';
 
 // disqus
 import './src/styles/disqus.css';
+
+// global
+
+import './src/styles/global.css';
