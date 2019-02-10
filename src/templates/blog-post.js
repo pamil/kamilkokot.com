@@ -6,6 +6,7 @@ import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
+import BlogPostMetadata from '../components/BlogPostMetadata';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -24,13 +25,17 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
-            ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          <BlogPostMetadata
+            date={post.frontmatter.date}
+            timeToRead={post.timeToRead}
+            disqusShortname={disqusShortname}
+            identifier={post.id}
+          />
         </p>
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -84,6 +89,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      timeToRead
       excerpt(pruneLength: 160)
       html
       frontmatter {

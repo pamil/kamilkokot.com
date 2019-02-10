@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { CommentCount } from 'disqus-react';
 
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import BlogPostMetadata from '../components/BlogPostMetadata';
 import { rhythm } from '../utils/typography';
-import formatReadingTime from '../utils/formatReadingTime';
 
 class BlogIndex extends React.Component {
   render() {
@@ -34,18 +33,12 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>
-                {node.frontmatter.date} &bull;{' '}
-                {formatReadingTime(node.timeToRead)} &bull;{' '}
-                <CommentCount
-                  shortname={disqusShortname}
-                  config={{
-                    identifier: node.id,
-                  }}
-                >
-                  Comments
-                </CommentCount>
-              </small>
+              <BlogPostMetadata
+                date={node.frontmatter.date}
+                timeToRead={node.timeToRead}
+                disqusShortname={disqusShortname}
+                identifier={node.id}
+              />
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           );
