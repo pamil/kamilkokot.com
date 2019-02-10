@@ -40,6 +40,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: `website`,
               },
               {
+                property: 'og:image',
+                content: data.avatar.childImageSharp.fixed,
+              },
+              {
                 name: `twitter:card`,
                 content: `summary`,
               },
@@ -95,6 +99,13 @@ const detailsQuery = graphql`
         title
         description
         author
+      }
+    }
+    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      childImageSharp {
+        fixed(width: 450, height: 450) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
   }
