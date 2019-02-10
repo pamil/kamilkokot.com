@@ -2,11 +2,11 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 
-import Bio from '../components/bio';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import { rhythm, scale } from '../utils/typography';
+import Bio from '../components/Bio';
 import BlogPostMetadata from '../components/BlogPostMetadata';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import { rhythm } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
   render() {
