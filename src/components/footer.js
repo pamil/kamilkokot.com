@@ -28,6 +28,14 @@ function Footer() {
               GitHub
             </a>{' '}
             &bull;{' '}
+            <a
+              href={`https://linkedin.com/in/${social.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>{' '}
+            &bull;{' '}
             <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
               RSS
             </a>
@@ -45,6 +53,7 @@ const footerQuery = graphql`
         social {
           twitter
           github
+          linkedin
         }
       }
     }
