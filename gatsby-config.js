@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kamil Kokot`,
     author: `Kamil Kokot`,
+    email: `kamil@kokot.me`,
     description: ``,
     siteUrl: `https://kamilkokot.com`,
     social: {
