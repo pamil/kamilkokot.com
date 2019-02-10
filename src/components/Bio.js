@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { Link, StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
 import { rhythm } from '../utils/typography';
@@ -29,9 +29,20 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Written by <strong>{author}</strong>.<br />I like good food, I
-              like to play a good game.
+            <p style={{ paddingRight: rhythm(2) }}>
+              I'm{' '}
+              <Link
+                to="contact"
+                style={{
+                  textDecoration: 'none',
+                  boxShadow: 'none',
+                  color: '#002b57',
+                }}
+              >
+                <strong>{author}</strong>
+              </Link>
+              . My goal is to make software testing as effortless as possible so
+              that you can develop with confidence.
             </p>
           </div>
         );

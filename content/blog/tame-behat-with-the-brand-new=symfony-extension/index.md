@@ -1,5 +1,5 @@
 ---
-title: Put Your Behat on Steroids with Symfony Extension
+title: Tame Behat with the Brand New Symfony Extension
 date: "2019-02-11"
 ---
 
