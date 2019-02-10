@@ -238,9 +238,9 @@ or [the documenation about Mink integration][fobse-docs-mink].
 
 With all those new, shiny features mentioned above, there are still a few ideas in my mind that would be great to have:
 
-- [exposing Mink as a service](https://github.com/FriendsOfBehat/SymfonyExtension/issues/61)
+- [providing Mink as a service](https://github.com/FriendsOfBehat/SymfonyExtension/issues/61)
 - [autowiring and autoconfiguration for steps definitions](https://github.com/FriendsOfBehat/SymfonyExtension/issues/62)
-- [BrowserKit API complementary to the Mink API (with Panther support)](https://github.com/FriendsOfBehat/SymfonyExtension/issues/67)
+- [exposing BrowserKit API as complementary to Mink API (with Panther support)](https://github.com/FriendsOfBehat/SymfonyExtension/issues/67)
 
 I made a GitHub project which is used as a [roadmap][fobse-roadmap] for this project.
 
