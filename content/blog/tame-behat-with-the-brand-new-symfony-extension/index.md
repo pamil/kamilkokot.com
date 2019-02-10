@@ -23,8 +23,6 @@ with stakeholders and writing down business features instead of figuring out low
 - Simplified usage, reduced the number of extensions from three to one
 - Improved developer experience with more descriptive exceptions and more predictable overall behaviour
 
-The paragraphs down below explain the reasoning behind design decisions made in the new extension. 
-
 If you want to try it first, [dive straight into the documentation][fobse-docs]. 
 
 I am working on an entry-level tutorial for SymfonyExtension v2, make sure to [follow me on Twitter][twitter-follow] 
