@@ -234,7 +234,7 @@ If you want to learn more, check out [the documentation about differences betwee
 or [the documenation about Mink integration][fobse-docs-mink].
 
 
-### What is next?
+### What's next?
 
 With all those new, shiny features mentioned above, there are still a few ideas in my mind that would be great to have:
 
