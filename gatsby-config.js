@@ -3,7 +3,7 @@ module.exports = {
     title: `kamilkokot.com`,
     author: `Kamil Kokot`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://kamilkokot.com/`,
+    siteUrl: `https://kamilkokot.com`,
     social: {
       twitter: `pamilme`,
     },
@@ -74,5 +74,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    'gatsby-plugin-sitemap',
   ],
 };
