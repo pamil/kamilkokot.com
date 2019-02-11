@@ -227,8 +227,11 @@ public function __invoke(): Response
 }
 ```
 
-This scenario would fail on the second `Then` step when using `Behat\Symfony2Extension`. It happens because
-the kernel is rebooted after each request. It causes unstable results and allows for fragile tests.
+This scenario would fail on the second `Then` step when using `Behat\Symfony2Extension`.
+
+It happens because the kernel is rebooted after each request, so that the first `Then` step one uses the same container that is
+used in Behat `Given` step before, but the second `Then` step uses a rebooted container which does not share the same state.
+This might make your tests fragile, eg. when you change assertions order.
 
 When run with `FriendsOfBehat\SymfonyExtension`, the scenario would fail on the first `Then` step because the service 
 state is not shared between Behat and HTTP application.
