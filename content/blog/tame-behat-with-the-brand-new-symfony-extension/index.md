@@ -57,7 +57,7 @@ second_suite:
             kernel: '@kernel' # highlight-line
 ```
 
-This snippet does not look that bad, mostly because of its size. With every new dependency and new suite it gets longer.
+This snippet does not look that bad, mostly because of its size. It gets longer and longer with every new dependency or suite though.
 Adding a new dependency to a context requires changing the configuration of every suite.
 
 #### FriendsOfBehat/SymfonyExtension v1
