@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: 'og:image',
-                content: avatar,
+                content: `https://kamilkokot.com${avatar}`,
               },
               {
                 name: `twitter:card`,
@@ -62,7 +62,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:image`,
-                content: avatar,
+                content: `https://kamilkokot.com${avatar}`,
               },
             ]
               .concat(
