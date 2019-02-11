@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: 'og:image',
-                content: `https://kamilkokot.com${avatar}`,
+                content: `${data.site.siteMetadata.siteUrl}${avatar}`,
               },
               {
                 name: `twitter:card`,
@@ -62,7 +62,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:image`,
-                content: `https://kamilkokot.com${avatar}`,
+                content: `${data.site.siteMetadata.siteUrl}${avatar}`,
               },
             ]
               .concat(
@@ -104,6 +104,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        siteUrl
       }
     }
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
