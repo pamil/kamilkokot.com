@@ -120,7 +120,7 @@ second_suite:
 If your context constructor has kernel argument type-hinted, this is all you need to make it work. 
 
 No need to worry about duplicated configuration, weird conventions, tagging contexts or using prefixes when referring to services.
-And you can reference private services as well! 
+And you can inject private services as well! 
 
 The extension provides a dependency injection configuration which automatically finds your contexts and autowires them:
 
