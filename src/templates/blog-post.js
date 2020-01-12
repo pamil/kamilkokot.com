@@ -48,33 +48,36 @@ class BlogPostTemplate extends React.Component {
         />
         <Bio />
 
-        {/*<nav>*/}
-        {/*<ul*/}
-        {/*style={{*/}
-        {/*display: `flex`,*/}
-        {/*flexWrap: `wrap`,*/}
-        {/*justifyContent: `space-between`,*/}
-        {/*listStyle: `none`,*/}
-        {/*padding: 0,*/}
-        {/*margin: 0,*/}
-        {/*}}*/}
-        {/*>*/}
-        {/*<li>*/}
-        {/*{previous && (*/}
-        {/*<Link to={previous.fields.slug} rel="prev">*/}
-        {/*← {previous.frontmatter.title}*/}
-        {/*</Link>*/}
-        {/*)}*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*{next && (*/}
-        {/*<Link to={next.fields.slug} rel="next">*/}
-        {/*{next.frontmatter.title} →*/}
-        {/*</Link>*/}
-        {/*)}*/}
-        {/*</li>*/}
-        {/*</ul>*/}
-        {/*</nav>*/}
+        <nav>
+          <ul
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'space-between',
+              listStyle: 'none',
+              padding: 0,
+            }}
+          >
+            <li>
+              {previous && (
+                <Link
+                  to={previous.fields.slug}
+                  rel="prev"
+                  style={{ marginRight: 20 }}
+                >
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
         <p>
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </p>
