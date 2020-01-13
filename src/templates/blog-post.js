@@ -6,6 +6,7 @@ import Bio from '../components/Bio';
 import BlogPostMetadata from '../components/BlogPostMetadata';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Signup from '../components/Signup';
 import { rhythm } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
@@ -47,6 +48,8 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
+
+        <Signup source={this.props.pageContext.slug} />
 
         <nav>
           <ul
