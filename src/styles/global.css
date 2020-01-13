@@ -2,3 +2,9 @@ a {
   text-decoration: none;
   box-shadow: none !important;
 }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

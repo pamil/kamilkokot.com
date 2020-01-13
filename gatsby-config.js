@@ -88,5 +88,12 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-catch-links',
     `gatsby-plugin-twitter`,
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://kamilkokot.us4.list-manage.com/subscribe/post?u=562a073a82fe92243a4017a42&id=647fc30e64',
+      },
+    },
   ],
 };
