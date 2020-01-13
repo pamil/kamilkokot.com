@@ -5,7 +5,7 @@ spoiler: |
     Do you use Behat with Symfony? 
     Here's why you should consider switching to FriendsOfBehat's SymfonyExtension. 
     Autowiring support, zero-configuration setup, Mink integration, Flex recipe, improved DX and more.
-tweet: <blockquote class="twitter-tweet" data-cards="hidden"><p lang="en" dir="ltr">Do you use Behat with Symfony? Here&#39;s why you should consider switching to FriendsOfBehat&#39;s SymfonyExtension. Autowiring support, zero-configuration setup, Mink integration, Flex recipe, improved DX and more.<a href="https://t.co/LI5rZFNinB">https://t.co/LI5rZFNinB</a></p>&mdash; Kamil Kokot (@pamilme) <a href="https://twitter.com/pamilme/status/1094944023717076992?ref_src=twsrc%5Etfw">February 11, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+tweet: <blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">Do you use Behat with Symfony? Here&#39;s why you should consider switching to FriendsOfBehat&#39;s SymfonyExtension. Autowiring support, zero-configuration setup, Mink integration, Flex recipe, improved DX and more.<a href="https://t.co/LI5rZFNinB">https://t.co/LI5rZFNinB</a></p>&mdash; Kamil Kokot (@pamilme) <a href="https://twitter.com/pamilme/status/1094944023717076992?ref_src=twsrc%5Etfw">February 11, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
 
 Over two years after the first release of this [Friends of Behat]'s [Symfony Extension], I'm happy to announce
