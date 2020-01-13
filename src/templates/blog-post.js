@@ -46,6 +46,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1.5),
           }}
         />
+
         <Bio />
 
         <nav>
@@ -78,6 +79,12 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
+
+        <div
+          dangerouslySetInnerHTML={{ __html: post.frontmatter.tweet }}
+          style={{ marginBottom: rhythm(1.5) }}
+        />
+
         <p>
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </p>
@@ -105,6 +112,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         spoiler
+        tweet
       }
     }
   }

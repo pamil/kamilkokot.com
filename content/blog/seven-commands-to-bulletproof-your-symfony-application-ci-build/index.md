@@ -4,6 +4,7 @@ date: "2020-01-12"
 spoiler: |
     Over the course of years, I noticed there are more and more checks that are usually performed in our Symfony applications'
     CI environment. This is my attempt at writing down the most useful ones.
+tweet: <blockquote class="twitter-tweet" data-cards="hidden"><p lang="en" dir="ltr">Over the course of years, I noticed there are more and more checks that are usually performed in our <a href="https://twitter.com/hashtag/symfony?src=hash&amp;ref_src=twsrc%5Etfw">#symfony</a> applications’ CI environment. This is my attempt at writing down the most useful ones. <a href="https://t.co/XGJF0jTd13">https://t.co/XGJF0jTd13</a></p>&mdash; Kamil Kokot (@pamilme) <a href="https://twitter.com/pamilme/status/1216661904866906114?ref_src=twsrc%5Etfw">January 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
 
 Over the course of years, I noticed there are more and more checks that are usually performed in our Symfony applications'
@@ -185,7 +186,7 @@ which I would like to include in another blog post in this series.
 
 What it mainly focuses on are commands that can be added with little effort but might be often overlooked. If you use one of those,
 but it wasn't mentioned above, let me know in the comments!
- 
+
 [fop-security-advisories]: https://github.com/FriendsOfPHP/security-advisories
 [roave-security-advisories]: https://github.com/Roave/SecurityAdvisories
 [sensiolabs-security-checker]: https://github.com/sensiolabs/security-checker
