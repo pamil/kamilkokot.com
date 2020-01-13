@@ -42,8 +42,8 @@ export default class Signup extends React.Component {
   render() {
     const inputStyles = {
       border: `${rhythm(0.1)} solid #eeeeee`,
-      borderRadius: rhythm(0.3),
-      padding: `${rhythm(0.1)} ${rhythm(0.2)}`,
+      borderRadius: rhythm(0.5),
+      padding: `${rhythm(0.1)} ${rhythm(0.4)}`,
       margin: rhythm(0.01),
     };
 
