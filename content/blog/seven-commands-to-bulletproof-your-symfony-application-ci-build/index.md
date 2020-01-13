@@ -1,5 +1,5 @@
 ---
-title: Seven Commands to Bulletproof Your Symfony Application Build 
+title: Seven Commands to Bulletproof Your Symfony Application CI Build 
 date: "2020-01-12"
 spoiler: |
     Over the course of years, I noticed there are more and more checks that are usually performed in our Symfony applications'
