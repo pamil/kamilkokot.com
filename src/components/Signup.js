@@ -67,7 +67,11 @@ export default class Signup extends React.Component {
           style={inputStyles}
           required
         />
-        <input type="submit" value="Subscribe" style={inputStyles} />
+        <input
+          type="submit"
+          value="Subscribe"
+          style={{ cursor: 'pointer', ...inputStyles }}
+        />
       </form>
     );
 
