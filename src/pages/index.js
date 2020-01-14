@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import BlogPostMetadata from '../components/BlogPostMetadata';
 import { rhythm } from '../utils/typography';
+import Signup from '../components/Signup';
 
 class BlogIndex extends React.Component {
   render() {
@@ -41,6 +42,9 @@ class BlogIndex extends React.Component {
             </div>
           );
         })}
+        <div style={{ marginBottom: rhythm(1) }}>
+          <Signup source={this.props.location.pathname} />
+        </div>
         <Bio />
       </Layout>
     );

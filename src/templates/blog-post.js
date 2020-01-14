@@ -49,7 +49,7 @@ class BlogPostTemplate extends React.Component {
         />
 
         <div style={{ marginBottom: rhythm(1.5) }}>
-          <Signup source={this.props.pageContext.slug} />
+          <Signup source={this.props.location.pathname} />
         </div>
 
         <Bio />
