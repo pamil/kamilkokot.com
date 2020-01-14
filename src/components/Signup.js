@@ -75,25 +75,28 @@ export default class Signup extends React.Component {
       <div
         style={{
           display: 'block',
-          padding: rhythm(0.3),
+          padding: `${rhythm(0.9)} ${rhythm(0.6)}`,
           backgroundColor: '#e6e6e6',
           borderRadius: rhythm(0.5),
           textAlign: 'center',
         }}
       >
         <div>
-          <h4 style={{ margin: 0 }}>Want to stay updated?</h4>
-          <small>Subscribe to my content. Opt-out at any time.</small>
+          <h4 style={{ margin: 0, ...scale(0.3) }}>
+            Subscribe to the newsletter
+          </h4>
+          <span>Stay up to date with my content. Opt-out at any time.</span>
         </div>
-        <div
-          style={{
-            backgroundColor: '#eeeeee',
-            borderRadius: rhythm(0.5),
-            padding: rhythm(0.2),
-          }}
-        >
+        <div style={{ padding: `${rhythm(0.8)} 0 0 0` }}>
           {this.state.failureMessage && (
-            <div>
+            <div
+              style={{
+                backgroundColor: '#eeeeee',
+                borderRadius: rhythm(0.5),
+                padding: `${rhythm(0.5)} ${rhythm(0.2)}`,
+                marginBottom: rhythm(0.8),
+              }}
+            >
               <div>
                 <strong>We've got a little problem over here!</strong>
               </div>
