@@ -9,18 +9,18 @@ spoiler: |
 [Friends of Behat's SymfonyExtension][fob-se] becomes more and more popular as the downloads rose almost fivefold in the last year.
 I'm happy to announce the new release bringing support for Symfony 5 and PHP 7.4, together with functional improvements.
 
-If you haven't get to know it before, I'd recommend to [read the last release announcement][fob-se-20-blogpost].
+If you haven't got to know it before, I'd recommend to [reading last release announcement][fob-se-20-blogpost].
 
 ### Symfony 5 and PHP 7.4 support
 
-With Symfony 5 and PHP 7.4 released in late November 2019, adding a support for it was only a matter of time.
+With Symfony 5 and PHP 7.4 released in late November 2019, adding support for it was only a matter of time.
 Behat officially started supporting those in early February 2020 and SymfonyExtension was ready for it shortly after. 
 
 Unfortunately, Mink ecosystem was lagging behind. Since most of the projects rely on both Behat and Mink,
-I've decided to fork those libraries to Friends of Behat organisation. This way I could quickly release drop-in replacements
+I've decided to fork those libraries to Friends of Behat organisation. This way, I could quickly release drop-in replacements
 for problematic libraries, having Symfony 5 support as my only objective - any other improvements or changes are currently not accepted. 
 
-The mentioned packages are `behat/mink`, `behat/mink-extension` and `behat/mink-browserkit-driver`. In order to use the
+The mentioned packages are `behat/mink`, `behat/mink-extension` and `behat/mink-browserkit-driver`. To use the
 forked versions, replace `behat` with `friends-of-behat` in their name, ending up with `friends-of-behat/mink`,
 `friends-of-behat/mink-extension` and `friends-of-behat/mink-browserkit-driver` respectively.
 
@@ -32,7 +32,7 @@ Learn more: [Symfony 5](https://github.com/FriendsOfBehat/SymfonyExtension/pull/
 ### Mink's driver service container exposed
 
 Raised multiple times in issues on the repository, the 2.0 release removed the possibility of getting into Mink's driver
-service container easily. This is especially helpful when you want to assert emails sent or messages dispatched during the
+service container easily. Getting it is especially helpful when you want to assert emails sent or messages dispatched during the
 last HTTP request. 
 
 Starting from SymfonyExtension 2.1, you only need to inject `behat.driver.service_container` service or ask for
@@ -70,7 +70,7 @@ Learn more: [Driver service container exposed](https://github.com/FriendsOfBehat
 
 ### Simple BrowserKit integration
 
-If you don't really need Mink's flexibility, the latest release contains a simple integration with BrowserKit. Whenever you
+If you don't need Mink's flexibility, the latest release contains a simple integration with BrowserKit. Whenever you
 require `Symfony\Bundle\FrameworkBundle\KernelBrowser` or `Symfony\Component\HttpKernel\HttpKernelBrowser` in your context,
 it'll be autowired to `test.client` service.
 
