@@ -29,9 +29,6 @@ with stakeholders and writing down business features instead of figuring out low
 
 If you want to try it first, [dive straight into the documentation][fobse-docs]. 
 
-I am working on an entry-level tutorial for SymfonyExtension v2, make sure to [follow me on Twitter][twitter-follow] 
-if you do not want to miss it.
-
 ### Support for Symfony's autowiring and autoconfiguration
 
 Ever since I have started working with Behat and Symfony on more complex projects, the number of configuration changes 
