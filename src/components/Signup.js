@@ -25,7 +25,6 @@ export default class Signup extends React.Component {
     e.preventDefault();
 
     const result = await addToMailchimp(this.state.email, {
-      FNAME: this.state.name,
       SOURCE: this.props.source,
     });
 
@@ -49,15 +48,6 @@ export default class Signup extends React.Component {
 
     const form = (
       <form onSubmit={this.handleSubmit} style={{ margin: 0, padding: 0 }}>
-        <input
-          placeholder="First name"
-          name="name"
-          type="text"
-          value={this.state.name}
-          onChange={this.onNameChange}
-          style={inputStyles}
-          required
-        />
         <input
           placeholder="Email address"
           name="email"

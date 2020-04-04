@@ -44,11 +44,8 @@ function Bio() {
               </Link>
               . My goal is to make software testing as effortless as possible so
               that you can develop with confidence. I&nbsp;work on{' '}
-              <a href="https://app.holaspirit.com/public/sylius/member/k5Ohs7-kamil-kokot/governance">
-                Sylius
-              </a>{' '}
-              and <a href="https://github.com/FriendsOfBehat">FriendsOfBehat</a>
-              .
+              <a href="https://sylius.com">Sylius</a> and{' '}
+              <a href="https://github.com/FriendsOfBehat">FriendsOfBehat</a>.
             </p>
           </div>
         );
