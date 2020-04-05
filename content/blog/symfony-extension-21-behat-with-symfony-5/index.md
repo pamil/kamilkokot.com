@@ -5,6 +5,7 @@ image: image.png
 spoiler: |
     Friends of Behat's SymfonyExtension becomes more and more popular as the downloads rose almost fivefold in the last year.
     I'm happy to announce the new release bringing support for Symfony 5 and PHP 7.4, together with functional improvements.
+tweet: <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Eager to use <a href="https://twitter.com/BehatPHP?ref_src=twsrc%5Etfw">@BehatPHP</a> in your <a href="https://twitter.com/symfony?ref_src=twsrc%5Etfw">@symfony</a> 5 application? The latest release of FriendsOfBehat&#39;s SymfonyExtension comes to the rescue! Symfony 5 and PHP 7.4 support, better Mink and BrowserKit integrations and a few more improvements included. <a href="https://t.co/yYRH9J2knh">https://t.co/yYRH9J2knh</a></p>&mdash; Kamil Kokot (@pamilme) <a href="https://twitter.com/pamilme/status/1246770622677557248?ref_src=twsrc%5Etfw">April 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
 
 [Friends of Behat's SymfonyExtension][fob-se] becomes more and more popular as the downloads rose almost fivefold in the last year.
