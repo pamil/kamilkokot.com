@@ -1,6 +1,7 @@
 ---
 title: Seven Commands to Bulletproof Your Symfony Application CI Build 
 date: "2020-01-12"
+image: image.png
 spoiler: |
     Over the course of years, I noticed there are more and more checks that are usually performed in our Symfony applications'
     CI environment. This is my attempt at writing down the most useful ones.

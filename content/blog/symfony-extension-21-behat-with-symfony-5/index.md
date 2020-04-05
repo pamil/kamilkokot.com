@@ -1,6 +1,7 @@
 ---
 title: "SymfonyExtension 2.1: Behat with Symfony 5" 
 date: "2020-04-05"
+image: image.png
 spoiler: |
     Friends of Behat's SymfonyExtension becomes more and more popular as the downloads rose almost fivefold in the last year.
     I'm happy to announce the new release bringing support for Symfony 5 and PHP 7.4, together with functional improvements.

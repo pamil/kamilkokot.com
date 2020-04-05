@@ -25,6 +25,11 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.spoiler}
+          image={
+            post.frontmatter.image === null
+              ? null
+              : post.frontmatter.image.childImageSharp.fluid.src
+          }
         />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -118,6 +123,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         spoiler
         tweet
+        image {
+          childImageSharp {
+            fluid(maxWidth: 6000, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

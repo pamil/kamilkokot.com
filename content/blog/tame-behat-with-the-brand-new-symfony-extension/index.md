@@ -1,6 +1,7 @@
 ---
 title: Tame Behat with the Brand New Symfony Extension 
 date: "2019-02-11"
+image: image.png
 spoiler: |
     Do you use Behat with Symfony? 
     Here's why you should consider switching to FriendsOfBehat's SymfonyExtension. 
