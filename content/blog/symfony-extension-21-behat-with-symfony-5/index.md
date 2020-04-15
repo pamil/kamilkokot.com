@@ -11,7 +11,7 @@ tweet: <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">
 [Friends of Behat's SymfonyExtension][fob-se] becomes more and more popular as the downloads rose almost fivefold in the last year.
 I'm happy to announce the new release bringing support for Symfony 5 and PHP 7.4, together with functional improvements.
 
-If you haven't got to know it before, I'd recommend to [reading last release announcement][fob-se-20-blogpost].
+If you haven't got to know it before, I'd recommend [reading the last release announcement][fob-se-20-blogpost].
 
 ### Symfony 5 and PHP 7.4 support
 
@@ -164,5 +164,6 @@ Publishing a tutorial on making use of BDD within Symfony 5 application context 
 Feel free to let me know what would you like to see first! 
 
 [fob-poe]: https://github.com/FriendsOfBehat/PageObjectExtension
-[fob-se]: https://github.com/FriendsOfBehat/SymfonyExtension
 [fob-se-20-blogpost]: https://kamilkokot.com/tame-behat-with-the-brand-new-symfony-extension/
+[fob-se]: https://github.com/FriendsOfBehat/SymfonyExtension
+[sl-poe]: https://github.com/sensiolabs/BehatPageObjectExtension
