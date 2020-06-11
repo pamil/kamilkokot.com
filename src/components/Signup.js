@@ -95,7 +95,9 @@ export default class Signup extends React.Component {
           alignItems: 'center',
           backgroundImage:
             'linear-gradient(to right, rgb(35, 35, 51), rgb(163, 163, 203))',
+          //here you can change the gradient border size:
           padding: '1px',
+          // ^^^^^^^^^^^^
           margin: '50px 0',
         }}
       >
