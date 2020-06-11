@@ -3,6 +3,54 @@ a {
   box-shadow: none !important;
 }
 
+h1 {
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 35, 51),
+    rgb(62, 62, 108)
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header h3 a {
+  font-size: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 35, 51),
+    rgb(62, 62, 108)
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+a:link,
+a:visited {
+  color: rgb(18, 50, 75);
+  transition: all 0.3s;
+}
+
+a:hover,
+a:active {
+  color: rgb(28, 84, 126);
+}
+
+h3 .Link-article:link,
+h3 .Link-article:visited {
+  font-size: 32px !important;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  h3 .Link-article:link,
+  h3 .Link-article:visited {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
 input:focus,
 textarea:focus,
 select:focus {

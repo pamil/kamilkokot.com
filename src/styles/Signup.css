@@ -1,0 +1,98 @@
+.Signup-form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.Signup-input {
+  border: 1px solid rgb(35, 35, 51);
+  margin: 0px;
+}
+
+.Signup-input-mail {
+  min-height: 45px;
+  flex: 0 1 40%;
+}
+@media only screen and (max-width: 600px) {
+  .Signup-input-mail {
+    flex: 0 0 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Signup-input-mail {
+    flex: 0 0 100%;
+  }
+}
+
+.Signup-input-submit {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 35, 51),
+    rgb(62, 62, 108)
+  );
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding: 10px 17px;
+  height: 45px;
+  flex: 0 1 150px;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 600px) {
+  .Signup-input-submit {
+    flex: 0 0 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Signup-input-submit {
+    flex: 0 0 100%;
+  }
+}
+
+.Signup-input-submit:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(47, 47, 79),
+    rgb(62, 62, 126)
+  );
+  transform: scale(1.05);
+}
+
+.Signup-input-submit:active {
+  transform: scale(1);
+}
+
+.Signup-gradient-wrapper {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 35, 51),
+    rgb(163, 163, 203)
+  );
+  padding: 1px;
+  margin: 50px auto;
+}
+@media only screen and (max-width: 600px) {
+  .Signup-gradient-wrapper {
+    width: 100%;
+  }
+}
+
+.Signup-container {
+  display: block;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}

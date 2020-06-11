@@ -1,6 +1,7 @@
 import React from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import { rhythm, scale } from '../utils/typography';
+import '../styles/Signup.css';
 
 export default class Signup extends React.Component {
   constructor(props) {
@@ -40,66 +41,69 @@ export default class Signup extends React.Component {
 
   render() {
     const inputStyles = {
-      border: `${rhythm(0.1)} solid #eeeeee`,
-      borderRadius: rhythm(0.5),
       padding: `${rhythm(0.1)} ${rhythm(0.4)}`,
-      margin: rhythm(0.01),
     };
 
     const form = (
-      <form onSubmit={this.handleSubmit} style={{ margin: 0, padding: 0 }}>
+      <form onSubmit={this.handleSubmit} className="Signup-form">
         <input
           placeholder="Email address"
           name="email"
           type="email"
           value={this.state.email}
           onChange={this.onEmailChange}
+          className="Signup-input Signup-input-mail"
           style={inputStyles}
           required
         />
         <input
           type="submit"
           value="Subscribe"
-          style={{ cursor: 'pointer', ...inputStyles }}
+          style={inputStyles}
+          className="Signup-input Signup-input-submit"
         />
       </form>
     );
 
     return (
-      <div
-        style={{
-          display: 'block',
-          padding: `${rhythm(0.9)} ${rhythm(0.6)}`,
-          backgroundColor: '#e6e6e6',
-          borderRadius: rhythm(0.5),
-          textAlign: 'center',
-        }}
-      >
-        <div>
-          <h4 style={{ margin: 0, ...scale(0.3) }}>
-            Subscribe to the newsletter
-          </h4>
-          <span>Stay up to date with my content. Opt-out at any time.</span>
-        </div>
-        <div style={{ padding: `${rhythm(0.8)} 0 0 0` }}>
-          {this.state.failureMessage && (
-            <div
+      <div className="Signup-gradient-wrapper">
+        <div
+          className="Signup-container"
+          style={{ padding: `${rhythm(1.2)} ${rhythm(0.6)}` }}
+        >
+          <div>
+            <h3
               style={{
-                backgroundColor: '#eeeeee',
-                borderRadius: rhythm(0.5),
-                padding: `${rhythm(0.5)} ${rhythm(0.2)}`,
-                marginBottom: rhythm(0.8),
+                margin: '0 0 15px 0',
+                ...scale(0.9),
+                fontWeight: 300,
+                color: '#12324b',
               }}
             >
-              <div>
-                <strong>We've got a little problem over here!</strong>
+              Subscribe to the newsletter
+            </h3>
+            <span>Stay up to date with my content. Opt-out at any time.</span>
+          </div>
+          <div style={{ padding: `${rhythm(0.8)} 0 0 0` }}>
+            {this.state.failureMessage && (
+              <div
+                style={{
+                  backgroundColor: '#eeeeee',
+                  borderRadius: rhythm(0.5),
+                  padding: `${rhythm(0.5)} ${rhythm(0.2)}`,
+                  marginBottom: rhythm(0.8),
+                }}
+              >
+                <div>
+                  <strong>We've got a little problem over here!</strong>
+                </div>
+                <div>
+                  <small>{this.state.failureMessage}</small>
+                </div>
               </div>
-              <div>
-                <small>{this.state.failureMessage}</small>
-              </div>
-            </div>
-          )}
-          {this.state.successMessage || form}
+            )}
+            {this.state.successMessage || form}
+          </div>
         </div>
       </div>
     );
