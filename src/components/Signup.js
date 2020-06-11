@@ -72,9 +72,16 @@ export default class Signup extends React.Component {
           style={{ padding: `${rhythm(1.2)} ${rhythm(0.6)}` }}
         >
           <div>
-            <h4 style={{ margin: '0 0 15px 0', ...scale(1), fontWeight: 300 }}>
+            <h3
+              style={{
+                margin: '0 0 15px 0',
+                ...scale(0.9),
+                fontWeight: 300,
+                color: '#12324b',
+              }}
+            >
               Subscribe to the newsletter
-            </h4>
+            </h3>
             <span>Stay up to date with my content. Opt-out at any time.</span>
           </div>
           <div style={{ padding: `${rhythm(0.8)} 0 0 0` }}>

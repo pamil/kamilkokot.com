@@ -10,7 +10,18 @@ h1 {
     rgb(62, 62, 108)
   );
   display: inline-block;
-  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header h3 a {
+  font-size: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 35, 51),
+    rgb(62, 62, 108)
+  );
+  display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -26,10 +37,18 @@ a:active {
   color: rgb(28, 84, 126);
 }
 
-h3 a:link,
-h3 a:visited {
-  font-size: 32px;
+h3 .Link-article:link,
+h3 .Link-article:visited {
+  font-size: 32px !important;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  h3 .Link-article:link,
+  h3 .Link-article:visited {
+    font-size: 24px;
+    font-weight: 300;
+  }
 }
 
 input:focus,
