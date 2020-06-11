@@ -1,6 +1,7 @@
 import React from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import { rhythm, scale } from '../utils/typography';
+import '../styles/Signup.css';
 
 export default class Signup extends React.Component {
   constructor(props) {
@@ -40,75 +41,35 @@ export default class Signup extends React.Component {
 
   render() {
     const inputStyles = {
-      border: '1px solid rgb(35, 35, 51)',
       padding: `${rhythm(0.1)} ${rhythm(0.4)}`,
-      margin: '0px',
-      flex: 1,
     };
 
     const form = (
-      <form
-        onSubmit={this.handleSubmit}
-        style={{
-          margin: 0,
-          padding: 0,
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-        }}
-      >
+      <form onSubmit={this.handleSubmit} className="Signup-form">
         <input
           placeholder="Email address"
           name="email"
           type="email"
           value={this.state.email}
           onChange={this.onEmailChange}
-          style={{ ...inputStyles, minHeight: '45px', flex: '0 1 40%' }}
+          className="Signup-input Signup-input-mail"
+          style={inputStyles}
           required
         />
         <input
           type="submit"
           value="Subscribe"
-          style={{
-            ...inputStyles,
-            cursor: 'pointer',
-            backgroundImage:
-              'linear-gradient(to right, rgb(35, 35, 51), rgb(62, 62, 108))',
-            border: 'none',
-            color: 'white',
-            textTransform: 'uppercase',
-            letterSpacing: '2px',
-            fontWeight: '300',
-            padding: '10px 17px',
-            flex: '0 1 150px',
-          }}
+          style={inputStyles}
+          className="Signup-input Signup-input-submit"
         />
       </form>
     );
 
     return (
-      <div
-        className="gradient-wrapper"
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundImage:
-            'linear-gradient(to right, rgb(35, 35, 51), rgb(163, 163, 203))',
-          //here you can change the gradient border size:
-          padding: '1px',
-          // ^^^^^^^^^^^^
-          margin: '50px 0',
-        }}
-      >
+      <div className="Signup-gradient-wrapper">
         <div
-          style={{
-            display: 'block',
-            width: '100%',
-            padding: `${rhythm(1.2)} ${rhythm(0.6)}`,
-            backgroundColor: 'white',
-            textAlign: 'center',
-          }}
+          className="Signup-container"
+          style={{ padding: `${rhythm(1.2)} ${rhythm(0.6)}` }}
         >
           <div>
             <h4 style={{ margin: '0 0 15px 0', ...scale(1), fontWeight: 300 }}>

@@ -42,7 +42,13 @@ class BlogIndex extends React.Component {
             </div>
           );
         })}
-        <div style={{ marginBottom: rhythm(1) }}>
+        <div
+          style={{
+            marginBottom: rhythm(1),
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
           <Signup source={this.props.location.pathname} />
         </div>
         <Bio />
