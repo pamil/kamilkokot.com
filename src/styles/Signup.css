@@ -82,7 +82,7 @@
     rgb(163, 163, 203)
   );
   padding: 1px;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 @media only screen and (max-width: 600px) {
   .Signup-gradient-wrapper {
