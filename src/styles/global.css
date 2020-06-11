@@ -28,7 +28,8 @@ a:active {
 
 h3 a:link,
 h3 a:visited {
-  font-size: 25px;
+  font-size: 32px;
+  font-weight: 300;
 }
 
 input:focus,
