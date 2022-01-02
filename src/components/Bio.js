@@ -43,9 +43,9 @@ function Bio() {
                 <strong>{author}</strong>
               </Link>
               . My goal is to make software testing as effortless as possible so
-              that you can develop with confidence. I&nbsp;work on{' '}
-              <a href="https://sylius.com">Sylius</a> and{' '}
-              <a href="https://github.com/FriendsOfBehat">FriendsOfBehat</a>.
+              that you can develop with confidence. I&nbsp;maintain{' '}
+              <a href="https://github.com/Behat">Behat</a> and{' '}
+              <a href="https://github.com/FriendsOfBehat">FriendsOfBehat</a> libraries.
             </p>
           </div>
         );
