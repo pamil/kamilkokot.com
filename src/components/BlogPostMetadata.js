@@ -12,7 +12,7 @@ function BlogPostMetadata({ date, timeToRead, identifier, slug = null }) {
         const { disqusShortname, githubRepository } = data.site.siteMetadata;
         return (
           <small>
-            {date} &bull; {formatReadingTime(timeToRead)} &bull;{' '}
+            {date} &#9702; {formatReadingTime(timeToRead)} &#9702;{' '}
             <CommentCount
               shortname={disqusShortname}
               config={{
@@ -24,7 +24,7 @@ function BlogPostMetadata({ date, timeToRead, identifier, slug = null }) {
             {slug && (
               <span>
                 {' '}
-                &bull;{' '}
+                &#9702;{' '}
                 <a
                   href={`https://github.com/${githubRepository}/edit/master/content/blog${slug}index.md`}
                   target="_blank"

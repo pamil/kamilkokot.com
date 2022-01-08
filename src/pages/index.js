@@ -27,7 +27,11 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link
+                  className="Link-article"
+                  style={{ boxShadow: `none` }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </Link>
               </h3>
@@ -42,7 +46,13 @@ class BlogIndex extends React.Component {
             </div>
           );
         })}
-        <div style={{ marginBottom: rhythm(1) }}>
+        <div
+          style={{
+            marginBottom: rhythm(1),
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
           <Signup source={this.props.location.pathname} />
         </div>
         <Bio />
